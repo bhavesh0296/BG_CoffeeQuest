@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4007A5FF26D420FC00B9E957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A5FE26D420FC00B9E957 /* AppDelegate.swift */; };
 		4007A60126D420FC00B9E957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A60026D420FC00B9E957 /* SceneDelegate.swift */; };
-		4007A60326D420FC00B9E957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A60226D420FC00B9E957 /* ViewController.swift */; };
-		4007A60626D420FC00B9E957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A60426D420FC00B9E957 /* Main.storyboard */; };
-		4007A60826D4210200B9E957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4007A60726D4210200B9E957 /* Assets.xcassets */; };
-		4007A60B26D4210200B9E957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A60926D4210200B9E957 /* LaunchScreen.storyboard */; };
+		4007A61826D4223500B9E957 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61726D4223500B9E957 /* MapPin.swift */; };
+		4007A61A26D4225200B9E957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61926D4225200B9E957 /* ViewController.swift */; };
+		4007A61C26D4226200B9E957 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61B26D4226200B9E957 /* APIKeys.swift */; };
+		4007A61E26D4227300B9E957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4007A61D26D4227300B9E957 /* Assets.xcassets */; };
+		4007A62126D4228400B9E957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A61F26D4228300B9E957 /* LaunchScreen.storyboard */; };
+		4007A62226D4228400B9E957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A62026D4228400B9E957 /* Main.storyboard */; };
 		5D3BC12DE0D006BBAB1D3431 /* Pods_BG_CoffeeQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D843A104646ECE1D742C538B /* Pods_BG_CoffeeQuest.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +22,13 @@
 		4007A5FB26D420FC00B9E957 /* BG_CoffeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BG_CoffeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4007A5FE26D420FC00B9E957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4007A60026D420FC00B9E957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4007A60226D420FC00B9E957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4007A60526D420FC00B9E957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4007A60726D4210200B9E957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4007A60A26D4210200B9E957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4007A60C26D4210200B9E957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4007A61726D4223500B9E957 /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		4007A61926D4225200B9E957 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4007A61B26D4226200B9E957 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		4007A61D26D4227300B9E957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4007A61F26D4228300B9E957 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4007A62026D4228400B9E957 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		85BA5085D8AFAC0F9D0ECB3B /* Pods-BG_CoffeeQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BG_CoffeeQuest.debug.xcconfig"; path = "Target Support Files/Pods-BG_CoffeeQuest/Pods-BG_CoffeeQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		992AE5BC1A95D711F12E987C /* Pods-BG_CoffeeQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BG_CoffeeQuest.release.xcconfig"; path = "Target Support Files/Pods-BG_CoffeeQuest/Pods-BG_CoffeeQuest.release.xcconfig"; sourceTree = "<group>"; };
 		D843A104646ECE1D742C538B /* Pods_BG_CoffeeQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BG_CoffeeQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,6 @@
 				85BA5085D8AFAC0F9D0ECB3B /* Pods-BG_CoffeeQuest.debug.xcconfig */,
 				992AE5BC1A95D711F12E987C /* Pods-BG_CoffeeQuest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +76,57 @@
 		4007A5FD26D420FC00B9E957 /* BG_CoffeeQuest */ = {
 			isa = PBXGroup;
 			children = (
-				4007A5FE26D420FC00B9E957 /* AppDelegate.swift */,
-				4007A60026D420FC00B9E957 /* SceneDelegate.swift */,
-				4007A60226D420FC00B9E957 /* ViewController.swift */,
-				4007A60426D420FC00B9E957 /* Main.storyboard */,
-				4007A60726D4210200B9E957 /* Assets.xcassets */,
-				4007A60926D4210200B9E957 /* LaunchScreen.storyboard */,
-				4007A60C26D4210200B9E957 /* Info.plist */,
+				4007A61226D421C200B9E957 /* AppDelegate */,
+				4007A61326D421CB00B9E957 /* Controllers */,
+				4007A61426D421D100B9E957 /* Models */,
+				4007A61526D421E900B9E957 /* Resources */,
+				4007A61626D421F800B9E957 /* Views */,
 			);
 			path = BG_CoffeeQuest;
+			sourceTree = "<group>";
+		};
+		4007A61226D421C200B9E957 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4007A60026D420FC00B9E957 /* SceneDelegate.swift */,
+				4007A5FE26D420FC00B9E957 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4007A61326D421CB00B9E957 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4007A61926D4225200B9E957 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4007A61426D421D100B9E957 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4007A61726D4223500B9E957 /* MapPin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4007A61526D421E900B9E957 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4007A61B26D4226200B9E957 /* APIKeys.swift */,
+				4007A61D26D4227300B9E957 /* Assets.xcassets */,
+				4007A60C26D4210200B9E957 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4007A61626D421F800B9E957 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4007A61F26D4228300B9E957 /* LaunchScreen.storyboard */,
+				4007A62026D4228400B9E957 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5073EE1E2B66EFB1C6F815DC /* Frameworks */ = {
@@ -152,9 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4007A60B26D4210200B9E957 /* LaunchScreen.storyboard in Resources */,
-				4007A60826D4210200B9E957 /* Assets.xcassets in Resources */,
-				4007A60626D420FC00B9E957 /* Main.storyboard in Resources */,
+				4007A62226D4228400B9E957 /* Main.storyboard in Resources */,
+				4007A61E26D4227300B9E957 /* Assets.xcassets in Resources */,
+				4007A62126D4228400B9E957 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,32 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4007A60326D420FC00B9E957 /* ViewController.swift in Sources */,
+				4007A61826D4223500B9E957 /* MapPin.swift in Sources */,
+				4007A61C26D4226200B9E957 /* APIKeys.swift in Sources */,
 				4007A5FF26D420FC00B9E957 /* AppDelegate.swift in Sources */,
+				4007A61A26D4225200B9E957 /* ViewController.swift in Sources */,
 				4007A60126D420FC00B9E957 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4007A60426D420FC00B9E957 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4007A60526D420FC00B9E957 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4007A60926D4210200B9E957 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4007A60A26D4210200B9E957 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4007A60D26D4210200B9E957 /* Debug */ = {
@@ -356,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5RKT2K7BV;
-				INFOPLIST_FILE = BG_CoffeeQuest/Info.plist;
+				INFOPLIST_FILE = BG_CoffeeQuest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5RKT2K7BV;
-				INFOPLIST_FILE = BG_CoffeeQuest/Info.plist;
+				INFOPLIST_FILE = BG_CoffeeQuest/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
