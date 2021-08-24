@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4007A5FF26D420FC00B9E957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A5FE26D420FC00B9E957 /* AppDelegate.swift */; };
 		4007A60126D420FC00B9E957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A60026D420FC00B9E957 /* SceneDelegate.swift */; };
-		4007A61826D4223500B9E957 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61726D4223500B9E957 /* MapPin.swift */; };
+		4007A61826D4223500B9E957 /* BusinessMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61726D4223500B9E957 /* BusinessMapViewModel.swift */; };
 		4007A61A26D4225200B9E957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61926D4225200B9E957 /* ViewController.swift */; };
 		4007A61C26D4226200B9E957 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007A61B26D4226200B9E957 /* APIKeys.swift */; };
 		4007A61E26D4227300B9E957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4007A61D26D4227300B9E957 /* Assets.xcassets */; };
@@ -23,7 +23,7 @@
 		4007A5FE26D420FC00B9E957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4007A60026D420FC00B9E957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4007A60C26D4210200B9E957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4007A61726D4223500B9E957 /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		4007A61726D4223500B9E957 /* BusinessMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessMapViewModel.swift; sourceTree = "<group>"; };
 		4007A61926D4225200B9E957 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4007A61B26D4226200B9E957 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		4007A61D26D4227300B9E957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 		4007A5FD26D420FC00B9E957 /* BG_CoffeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				406EABF526D5531300AAA62F /* ViewModels */,
 				4007A61226D421C200B9E957 /* AppDelegate */,
 				4007A61326D421CB00B9E957 /* Controllers */,
-				4007A61426D421D100B9E957 /* Models */,
 				4007A61526D421E900B9E957 /* Resources */,
 				4007A61626D421F800B9E957 /* Views */,
 			);
@@ -102,14 +102,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4007A61426D421D100B9E957 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4007A61726D4223500B9E957 /* MapPin.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		4007A61526D421E900B9E957 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +119,14 @@
 				4007A62026D4228400B9E957 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		406EABF526D5531300AAA62F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4007A61726D4223500B9E957 /* BusinessMapViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5073EE1E2B66EFB1C6F815DC /* Frameworks */ = {
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4007A61826D4223500B9E957 /* MapPin.swift in Sources */,
+				4007A61826D4223500B9E957 /* BusinessMapViewModel.swift in Sources */,
 				4007A61C26D4226200B9E957 /* APIKeys.swift in Sources */,
 				4007A5FF26D420FC00B9E957 /* AppDelegate.swift in Sources */,
 				4007A61A26D4225200B9E957 /* ViewController.swift in Sources */,
