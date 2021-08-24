@@ -15,6 +15,7 @@
 		4007A61E26D4227300B9E957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4007A61D26D4227300B9E957 /* Assets.xcassets */; };
 		4007A62126D4228400B9E957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A61F26D4228300B9E957 /* LaunchScreen.storyboard */; };
 		4007A62226D4228400B9E957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4007A62026D4228400B9E957 /* Main.storyboard */; };
+		406EABF826D55FD800AAA62F /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EABF726D55FD800AAA62F /* AnnotationFactory.swift */; };
 		5D3BC12DE0D006BBAB1D3431 /* Pods_BG_CoffeeQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D843A104646ECE1D742C538B /* Pods_BG_CoffeeQuest.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		4007A61D26D4227300B9E957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4007A61F26D4228300B9E957 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4007A62026D4228400B9E957 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		406EABF726D55FD800AAA62F /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
 		85BA5085D8AFAC0F9D0ECB3B /* Pods-BG_CoffeeQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BG_CoffeeQuest.debug.xcconfig"; path = "Target Support Files/Pods-BG_CoffeeQuest/Pods-BG_CoffeeQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		992AE5BC1A95D711F12E987C /* Pods-BG_CoffeeQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BG_CoffeeQuest.release.xcconfig"; path = "Target Support Files/Pods-BG_CoffeeQuest/Pods-BG_CoffeeQuest.release.xcconfig"; sourceTree = "<group>"; };
 		D843A104646ECE1D742C538B /* Pods_BG_CoffeeQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BG_CoffeeQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		4007A5FD26D420FC00B9E957 /* BG_CoffeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				406EABF626D55FBB00AAA62F /* Factories */,
 				406EABF526D5531300AAA62F /* ViewModels */,
 				4007A61226D421C200B9E957 /* AppDelegate */,
 				4007A61326D421CB00B9E957 /* Controllers */,
@@ -127,6 +130,14 @@
 				4007A61726D4223500B9E957 /* BusinessMapViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		406EABF626D55FBB00AAA62F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				406EABF726D55FD800AAA62F /* AnnotationFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		5073EE1E2B66EFB1C6F815DC /* Frameworks */ = {
@@ -253,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4007A61826D4223500B9E957 /* BusinessMapViewModel.swift in Sources */,
+				406EABF826D55FD800AAA62F /* AnnotationFactory.swift in Sources */,
 				4007A61C26D4226200B9E957 /* APIKeys.swift in Sources */,
 				4007A5FF26D420FC00B9E957 /* AppDelegate.swift in Sources */,
 				4007A61A26D4225200B9E957 /* ViewController.swift in Sources */,
