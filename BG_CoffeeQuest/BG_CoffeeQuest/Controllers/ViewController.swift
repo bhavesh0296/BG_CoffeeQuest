@@ -32,8 +32,8 @@ import YelpAPI
 public class ViewController: UIViewController {
 
     // MARK: - Properties
-    private var businesses: [YLPBusiness] = []
-    private let client = YLPClient(apiKey: YelpAPIKey)
+    private var businesses: [Business] = []
+    private let client: BusinessSearchClient = YLPClient(apiKey: YelpAPIKey)
     private let locationManager = CLLocationManager()
     public let annotationFactory = AnnotationFactory()
 
@@ -80,24 +80,37 @@ extension ViewController: MKMapViewDelegate {
                 return
         }
 
-        let yelpCoordinate = YLPCoordinate(latitude: coordinate.latitude,
-                                           longitude: coordinate.longitude)
+//        let yelpCoordinate = YLPCoordinate(latitude: coordinate.latitude,
+//                                           longitude: coordinate.longitude)
 
-        client.search(with: yelpCoordinate,
-                      term: "coffee",
-                      limit: 35,
-                      offset: 0,
-                      sort: .bestMatched) { [weak self] (searchResult, error) in
-                        guard let self = self else { return }
-                        guard let searchResult = searchResult,
-                            error == nil else {
-                                print("Search failed: \(String(describing: error))")
-                                return
-                        }
-                        self.businesses = searchResult.businesses
-                        DispatchQueue.main.async {
-                            self.addAnnotations()
-                        }
+//        client.search(with: yelpCoordinate,
+//                      term: "coffee",
+//                      limit: 35,
+//                      offset: 0,
+//                      sort: .bestMatched) { [weak self] (searchResult, error) in
+//                        guard let self = self else { return }
+//                        guard let searchResult = searchResult,
+//                            error == nil else {
+//                                print("Search failed: \(String(describing: error))")
+//                                return
+//                        }
+//                        self.businesses = searchResult.businesses
+//                        DispatchQueue.main.async {
+//                            self.addAnnotations()
+//                        }
+//        }
+
+        client.search(with: coordinate, term: "coffee", limit: 35, offset: 0) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let businesses):
+                self.businesses = businesses
+                DispatchQueue.main.async {
+                    self.addAnnotations()
+                }
+            case .failure(let error):
+                print("Error Occured: \(error)")
+            }
         }
     }
 

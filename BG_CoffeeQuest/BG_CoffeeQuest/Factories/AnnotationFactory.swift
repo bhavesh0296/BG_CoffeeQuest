@@ -38,4 +38,23 @@ public class AnnotationFactory {
         return BusinessMapViewModel(coordinate: coordinate, name: business.name, rating: business.rating, image: image)
     }
 
+    public func createBusinessMapViewModel(for business: Business) -> BusinessMapViewModel {
+
+           let image: UIImage
+           switch business.rating {
+           case 0..<3.5:
+               image = UIImage(named: "bad")!
+           case 3.5..<4.0:
+               image = UIImage(named: "meh")!
+           case 4..<4.75:
+               image = UIImage(named: "good")!
+           case 4...5:
+               image = UIImage(named: "great")!
+           default:
+               image = UIImage(named: "bad")!
+           }
+
+        return BusinessMapViewModel(coordinate: business.location, name: business.name, rating: business.rating, image: image)
+       }
+
 }
